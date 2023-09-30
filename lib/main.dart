@@ -34,7 +34,7 @@ class _HogeState extends State<Hoge> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hoge'),
+        title: const Text('Hello Hoge'),
       ),
     );
   }
