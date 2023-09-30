@@ -1,4 +1,3 @@
-import 'package:example_app/screen/state_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,18 +5,37 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // 画面右上のデバッグバナーを非表示にする
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const StatePage(),
+      home: const Hoge(),
+    );
+  }
+}
+
+
+class Hoge extends StatefulWidget {
+  const Hoge({Key? key}) : super(key: key);
+
+  @override
+  State<Hoge> createState() => _HogeState();
+}
+
+class _HogeState extends State<Hoge> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Hoge'),
+      ),
     );
   }
 }
