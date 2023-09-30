@@ -16,20 +16,20 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Hoge(),
+      home: const HogePage(),
     );
   }
 }
 
 
-class Hoge extends StatefulWidget {
-  const Hoge({Key? key}) : super(key: key);
+class HogePage extends StatefulWidget {
+  const HogePage({Key? key}) : super(key: key);
 
   @override
-  State<Hoge> createState() => _HogeState();
+  State<HogePage> createState() => _HogePageState();
 }
 
-class _HogeState extends State<Hoge> {
+class _HogePageState extends State<HogePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
